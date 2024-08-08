@@ -23,3 +23,6 @@ for feature in X_train.columns:
 # Sort the features by Kendall's tau coefficient in descending order
 selected_features = sorted(kendall_coeffs, key=kendall_coeffs.get, reverse=True)[:k]
 
+X_train_subset = X_train[selected_features]
+X_test_subset = X_test[selected_features]
+
