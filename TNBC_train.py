@@ -5,7 +5,7 @@
 
 
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split, cross_val_score, RepeatedStratifiedKFold
+from sklearn.model_selection import train_test_split, cross_val_score, RepeatedStratifiedKFold, LeaveOneOut
 from sklearn.metrics import accuracy_score, precision_score, f1_score, recall_score, roc_auc_score
 import numpy as np
 
